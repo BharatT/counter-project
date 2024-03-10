@@ -1,7 +1,7 @@
-import { AfterContentInit, Component, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges } from '@angular/core';
-import { CounterService } from '../counter.service';
-import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { Component, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
+import { Observable } from 'rxjs';
+import { CounterService } from '../counter.service';
 
 @Component({
   selector: 'app-counter-btn',
