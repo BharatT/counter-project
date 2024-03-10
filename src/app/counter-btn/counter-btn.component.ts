@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, Input, OnInit, Renderer2 } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { CounterService } from '../counter.service';
 
@@ -14,7 +14,7 @@ export class CounterBtnComponent implements OnInit{
   @Input() containerName!: string;
   clickCount: Observable<number>;
   count:number = 0;
-  constructor(private counterService: CounterService, private renderer: Renderer2,  private el: ElementRef ) {
+  constructor(private counterService: CounterService, private el: ElementRef ) {
         this.clickCount = this.counterService.getCounter()
   }
  
